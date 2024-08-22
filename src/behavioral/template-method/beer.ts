@@ -6,6 +6,6 @@ export default class Beer extends TaxItem {
         super("Beer", description, price);
     }
     getTax(): number {
-        return (this.price * 10) / 100;
+        return 10;
     }   
 }

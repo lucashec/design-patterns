@@ -15,7 +15,7 @@ export default class Invoice {
         let taxes = 0;
         for (const item of this.items) {
             if (item instanceof TaxItem) {
-                taxes += item.getTax();
+                taxes += item.calculateTax();
             }
         }
         return taxes;
